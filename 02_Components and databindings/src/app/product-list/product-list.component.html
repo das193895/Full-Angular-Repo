@@ -1,0 +1,22 @@
+<!-- String interpolation -->
+<!-- We can add any typescript expression in between the brackets -->
+
+<img [src]=product.pImage alt=""> 
+
+<!-- string interpolation -->
+<div>name:{{product.name}}</div>
+<div>price:{{product.price}}</div>
+<div>color:{{product.color}}</div>
+<div>{{discounted_price()}}</div>
+<div>{{instock_or_not()}}</div>
+
+<!-- property binding  -->
+<button [disabled]="!instock_or_not_amount()">buy now</button>
+
+<!-- event binding -->
+<input (input) = "onNameChange($event)">
+<p>name = {{name}}</p>
+
+<button (click) = "increment()">+</button>
+<div>{{addToCart}}</div>
+<button (click) = "decrement()">-</button>
