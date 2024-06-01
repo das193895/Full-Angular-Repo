@@ -1,0 +1,3 @@
+1. The styles that are specified in a Components css file , will only get applied to the corresponding components html file.
+2. If you want to add angy global styles tha=en use the "style.css" file to do the same . The styles mentioned in this file will be applied to the whole application .
+3. GENERATING A COMPONENT WITH ANGULAR CLI : type command : "ng g c component_name" -- > It will generate all the files related to that component and also add the component class in the declaration array of the app.module folder --> We do not have to do anything manually.
